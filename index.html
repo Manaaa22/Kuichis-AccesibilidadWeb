@@ -15786,10 +15786,11 @@ customer: {}                },
 	<a 
 					href="#"
 			data-target="#modal-cart"
-				class="js-modal-open-private header-utility"
-		>
+				class="js-modal-open-private header-utility" aria-label="Carrito de compras">
 		<span class="js-header-utility-icon header-icon-big utility-icon-md-colors utility-icon-md-big">
-			<svg class="js-utility-cart-icon icon-inline utility-icon icon-lg"><use xlink:href="#cart"/></svg>
+			<svg class="js-utility-cart-icon icon-inline utility-icon icon-lg" aria-hidden="true">
+                <use xlink:href="#cart"/>
+            </svg>
 			<span class="js-cart-widget-amount badge mt-2 ">0</span>
 		</span>
 			</a>	
