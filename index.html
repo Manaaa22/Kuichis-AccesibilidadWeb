@@ -237,13 +237,20 @@
 
             --border-solid: 1px solid;
 
-            /* Asegurar que el texto o iconos dentro del botón de compra también contrasten */
-            .btn-primary:hover,
-            .btn-primary:focus {
-                background-color: #7d1b03 !important;
-                /* Un tono todavía más oscuro al pasar el mouse */
-                color: #ffffff !important;
-            }
+           /* Forzamos un verde oscuro con suficiente contraste para texto blanco (Pasa WCAG AA) */
+.product-item-quick-shop-modal-trigger.btn-primary,
+.js-quickshop-slide {
+    background-color: #146c43 !important;
+    border-color: #146c43 !important;
+    color: #ffffff !important;
+}
+
+/* Color cuando pasas el mouse por encima (hover) */
+.product-item-quick-shop-modal-trigger.btn-primary:hover,
+.js-quickshop-slide:hover {
+    background-color: #0f5132 !important;
+    border-color: #0f5132 !important;
+}
         }
     </style>
 
